@@ -1,4 +1,6 @@
 {
+  "block.evolutionae.pattern_provider_18s": "ME Pattern Provider",
   "item.evolutionae.item_of_item": "Item Of Item",
-  "itemGroup.evolutionae.main": "EvolutionAE"
+  "itemGroup.evolutionae.main": "EvolutionAE",
+  "tooltip.evolutionae.pattern_provider_18s": "A Pattern Provider with 18 pattern slots."
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "evolutionae:block/pattern_provider_18s"
+  }
+}

@@ -1,0 +1,39 @@
+package io.github.createtechified.evolutionae.common.registry;
+
+import appeng.helpers.patternprovider.PatternProviderLogicHost;
+import appeng.menu.AEBaseMenu;
+import appeng.menu.implementations.MenuTypeBuilder;
+import appeng.menu.implementations.PatternProviderMenu;
+import io.github.createtechified.evolutionae.EvoAEReference;
+import io.github.createtechified.evolutionae.EvolutionAEMod;
+import io.github.createtechified.evolutionae.common.data.patternproviders.menu.EvoAE18sPatternProviderMenu;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.inventory.MenuType;
+import net.neoforged.neoforge.registries.DeferredRegister;
+
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.function.Supplier;
+
+public class EvoAEMenus {
+    public static final DeferredRegister<MenuType<?>> DR = DeferredRegister.create(Registries.MENU, EvoAEReference.MODID);
+
+    private static final Map<ResourceLocation, MenuType<?>> MENU_TYPES = new HashMap<>();
+
+    public static Map<ResourceLocation, MenuType<?>> getMenuTypes() {
+        return Collections.unmodifiableMap(MENU_TYPES);
+    }
+
+    public static final Supplier<MenuType<EvoAE18sPatternProviderMenu>> PATTERN_PROVIDER_18S = create(
+            "pattern_provider_18s",
+            EvoAE18sPatternProviderMenu::new,
+            PatternProviderLogicHost.class
+    );
+
+    private static <M extends AEBaseMenu, H> Supplier<MenuType<M>> create(
+            String id, MenuTypeBuilder.MenuFactory<M, H> factory, Class<H> host) {
+        return DR.register(id, () -> MenuTypeBuilder.create(factory, host).buildUnregistered(EvolutionAEMod.id(id)));
+    }
+}

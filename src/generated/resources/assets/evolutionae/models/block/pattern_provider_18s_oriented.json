@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "evolutionae:block/pattern_provider_18s_alternate",
+    "side": "evolutionae:block/pattern_provider_18s_alternate_arrow",
+    "top": "evolutionae:block/pattern_provider_18s_alternate_front"
+  }
+}

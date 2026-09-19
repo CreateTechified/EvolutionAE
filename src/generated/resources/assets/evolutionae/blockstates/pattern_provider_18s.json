@@ -1,0 +1,33 @@
+{
+  "variants": {
+    "push_direction=all": {
+      "model": "evolutionae:block/pattern_provider_18s"
+    },
+    "push_direction=down": {
+      "model": "evolutionae:block/pattern_provider_18s_oriented",
+      "x": 180
+    },
+    "push_direction=east": {
+      "model": "evolutionae:block/pattern_provider_18s_oriented",
+      "x": 90,
+      "y": 90
+    },
+    "push_direction=north": {
+      "model": "evolutionae:block/pattern_provider_18s_oriented",
+      "x": 90
+    },
+    "push_direction=south": {
+      "model": "evolutionae:block/pattern_provider_18s_oriented",
+      "x": 90,
+      "y": 180
+    },
+    "push_direction=up": {
+      "model": "evolutionae:block/pattern_provider_18s_oriented"
+    },
+    "push_direction=west": {
+      "model": "evolutionae:block/pattern_provider_18s_oriented",
+      "x": 90,
+      "y": 270
+    }
+  }
+}
