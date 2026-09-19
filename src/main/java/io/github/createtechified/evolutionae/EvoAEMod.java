@@ -15,10 +15,10 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.registries.RegisterEvent;
 
 @Mod(EvoAEReference.MODID)
-public class EvolutionAEMod {
+public class EvoAEMod {
     private static boolean didRunRegistration = false;
 
-    public EvolutionAEMod(IEventBus bus, ModContainer container) {
+    public EvoAEMod(IEventBus bus, ModContainer container) {
         bus.register(this);
         EvoAEReference.REGISTRATE.registerEventListeners(bus);
         EvoAEMenus.DR.register(bus);

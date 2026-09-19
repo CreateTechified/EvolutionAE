@@ -6,8 +6,8 @@ import appeng.block.crafting.PushDirection;
 import com.tterrag.registrate.providers.DataGenContext;
 import com.tterrag.registrate.providers.RegistrateBlockstateProvider;
 import com.tterrag.registrate.util.entry.BlockEntry;
+import io.github.createtechified.evolutionae.EvoAEMod;
 import io.github.createtechified.evolutionae.EvoAEReference;
-import io.github.createtechified.evolutionae.EvolutionAEMod;
 import io.github.createtechified.evolutionae.common.data.patternproviders.block.EvoAE18sPatternProvider;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.Block;
@@ -24,9 +24,9 @@ public class EvoAEBlocks {
                 ModelFile normal = prov.cubeAll(ctx.getEntry());
                 ModelFile oriented = prov.models().cubeBottomTop(
                         ctx.getName() + "_oriented",
-                        EvolutionAEMod.id("block/" + ctx.getName() + "_alternate_arrow"),
-                        EvolutionAEMod.id("block/" + ctx.getName() + "_alternate"),
-                        EvolutionAEMod.id("block/" + ctx.getName() + "_alternate_front"));
+                        EvoAEMod.id("block/" + ctx.getName() + "_alternate_arrow"),
+                        EvoAEMod.id("block/" + ctx.getName() + "_alternate"),
+                        EvoAEMod.id("block/" + ctx.getName() + "_alternate_front"));
 
                 patternProviderModelHelper(
                         ctx, prov, EvoAE18sPatternProvider.PUSH_DIRECTION, normal, oriented);

@@ -1,8 +1,7 @@
-package io.github.createtechified.evolutionae.client;
+package io.github.createtechified.evolutionae;
 
 import appeng.client.gui.implementations.PatternProviderScreen;
 import appeng.init.client.InitScreens;
-import io.github.createtechified.evolutionae.EvoAEReference;
 import io.github.createtechified.evolutionae.common.data.patternproviders.menu.EvoAE18sPatternProviderMenu;
 import io.github.createtechified.evolutionae.common.registry.EvoAEMenus;
 import net.neoforged.api.distmarker.Dist;
@@ -11,9 +10,9 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 
 @Mod(value = EvoAEReference.MODID, dist = Dist.CLIENT)
-public class EvolutionAEClient {
-    public EvolutionAEClient(IEventBus bus) {
-        bus.addListener(EvolutionAEClient::initScreens);
+public class EvoAEClient {
+    public EvoAEClient(IEventBus bus) {
+        bus.addListener(EvoAEClient::initScreens);
     }
 
     private static void initScreens(RegisterMenuScreensEvent event) {

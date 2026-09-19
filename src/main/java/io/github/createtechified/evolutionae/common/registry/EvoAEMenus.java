@@ -3,9 +3,8 @@ package io.github.createtechified.evolutionae.common.registry;
 import appeng.helpers.patternprovider.PatternProviderLogicHost;
 import appeng.menu.AEBaseMenu;
 import appeng.menu.implementations.MenuTypeBuilder;
-import appeng.menu.implementations.PatternProviderMenu;
 import io.github.createtechified.evolutionae.EvoAEReference;
-import io.github.createtechified.evolutionae.EvolutionAEMod;
+import io.github.createtechified.evolutionae.EvoAEMod;
 import io.github.createtechified.evolutionae.common.data.patternproviders.menu.EvoAE18sPatternProviderMenu;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
@@ -34,6 +33,6 @@ public class EvoAEMenus {
 
     private static <M extends AEBaseMenu, H> Supplier<MenuType<M>> create(
             String id, MenuTypeBuilder.MenuFactory<M, H> factory, Class<H> host) {
-        return DR.register(id, () -> MenuTypeBuilder.create(factory, host).buildUnregistered(EvolutionAEMod.id(id)));
+        return DR.register(id, () -> MenuTypeBuilder.create(factory, host).buildUnregistered(EvoAEMod.id(id)));
     }
 }
