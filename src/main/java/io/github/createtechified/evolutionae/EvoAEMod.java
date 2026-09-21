@@ -30,7 +30,7 @@ public class EvoAEMod {
         didRunRegistration = true;
 
         EvoAETab.init();
-        EvoAEReference.REGISTRATE.creativeModeTab(() -> EvoAETab.MAIN);
+        EvoAEReference.REGISTRATE.defaultCreativeTab(EvoAETab.MAIN.getKey());
         EvoAEItems.init();
         EvoAEBlocks.init();
         EvoAEBlockEntities.init();
