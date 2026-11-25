@@ -21,6 +21,9 @@ sourceSets.main.resources {
 repositories {
     mavenLocal()
     mavenCentral()
+    flatDir {
+        dirs 'libs'
+    }
     maven {
         name = 'GTCEu Maven'
         url = 'https://maven.gtceu.com/'
@@ -121,7 +124,7 @@ configurations {
 dependencies {
     implementation "org.projectlombok:lombok:1.18.42"
     implementation "com.gregtechceu.gtceu:gtceu-${minecraft_version}:${gtm_version}"
-    jarJar implementation(files("libs/appliedenergistics2-19.2.21-alpha.14+1.21.1.jar"))
+    jarJar implementation("local:appliedenergistics2:${ae2_version}+${minecraft_version}")
     implementation "brachy.modularui:modularui-mc${minecraft_version}:${mui_version}"
     implementation "com.tterrag.registrate:Registrate:${registrate_version}"
     localRuntime "org.appliedenergistics:guideme:${guideme_version}"
