@@ -121,13 +121,13 @@ configurations {
 dependencies {
     implementation "org.projectlombok:lombok:1.18.42"
     implementation "com.gregtechceu.gtceu:gtceu-${minecraft_version}:${gtm_version}"
-    implementation "org.appliedenergistics:appliedenergistics2:${ae2_version}"
+    jarJar implementation(files("libs/appliedenergistics2-19.2.21-alpha.14+1.21.1.jar"))
     implementation "brachy.modularui:modularui-mc${minecraft_version}:${mui_version}"
     implementation "com.tterrag.registrate:Registrate:${registrate_version}"
     localRuntime "org.appliedenergistics:guideme:${guideme_version}"
     localRuntime "dev.emi:emi-neoforge:${emi_version}+${minecraft_version}"
     localRuntime "curse.maven:jade-324717:8591319"
-    localRuntime "curse.maven:tmrv-1194921:8336857"
+    //localRuntime "curse.maven:tmrv-1194921:8336857"
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
