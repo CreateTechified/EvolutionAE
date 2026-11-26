@@ -1,7 +1,7 @@
-package io.github.createtechified.evolutionae.common.data.patternproviders.block;
+package io.github.createtechified.evolutionae.common.data.crafting.patternproviders.block;
 
-import io.github.createtechified.evolutionae.common.data.patternproviders.EvoAEPatternProviderBase;
-import io.github.createtechified.evolutionae.common.data.patternproviders.blockentity.EvoAE18sPatternProviderBE;
+import io.github.createtechified.evolutionae.common.data.crafting.patternproviders.EvoAEPatternProviderBase;
+import io.github.createtechified.evolutionae.common.data.crafting.patternproviders.blockentity.EvoAE18sPatternProviderBE;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;

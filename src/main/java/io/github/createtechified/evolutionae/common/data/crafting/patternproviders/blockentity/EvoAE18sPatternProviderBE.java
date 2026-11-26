@@ -1,4 +1,4 @@
-package io.github.createtechified.evolutionae.common.data.patternproviders.blockentity;
+package io.github.createtechified.evolutionae.common.data.crafting.patternproviders.blockentity;
 
 import appeng.api.stacks.AEItemKey;
 import appeng.blockentity.crafting.PatternProviderBlockEntity;
@@ -6,7 +6,7 @@ import appeng.helpers.patternprovider.PatternProviderLogic;
 import appeng.menu.ISubMenu;
 import appeng.menu.MenuOpener;
 import appeng.menu.locator.MenuHostLocator;
-import io.github.createtechified.evolutionae.common.data.patternproviders.block.EvoAE18sPatternProvider;
+import io.github.createtechified.evolutionae.common.data.crafting.patternproviders.block.EvoAE18sPatternProvider;
 import io.github.createtechified.evolutionae.common.registry.EvoAEBlocks;
 import io.github.createtechified.evolutionae.common.registry.EvoAEMenus;
 import net.minecraft.core.BlockPos;

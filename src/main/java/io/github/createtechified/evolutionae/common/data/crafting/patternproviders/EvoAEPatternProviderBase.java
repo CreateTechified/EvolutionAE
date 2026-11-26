@@ -1,4 +1,4 @@
-package io.github.createtechified.evolutionae.common.data.patternproviders;
+package io.github.createtechified.evolutionae.common.data.crafting.patternproviders;
 
 import appeng.api.networking.IManagedGridNode;
 import appeng.block.AEBaseBlock;

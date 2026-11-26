@@ -1,4 +1,4 @@
-package io.github.createtechified.evolutionae.common.data.patternproviders.menu;
+package io.github.createtechified.evolutionae.common.data.crafting.patternproviders.menu;
 
 import appeng.helpers.patternprovider.PatternProviderLogicHost;
 import appeng.menu.implementations.PatternProviderMenu;

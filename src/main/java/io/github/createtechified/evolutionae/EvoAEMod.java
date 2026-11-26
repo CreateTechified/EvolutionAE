@@ -4,6 +4,7 @@ import io.github.createtechified.evolutionae.common.registry.EvoAEBlockEntities;
 import io.github.createtechified.evolutionae.common.registry.EvoAEBlocks;
 import io.github.createtechified.evolutionae.common.registry.EvoAEItems;
 import io.github.createtechified.evolutionae.common.registry.EvoAEMenus;
+import io.github.createtechified.evolutionae.common.registry.EvoAEMultiblocks;
 import io.github.createtechified.evolutionae.common.registry.EvoAETab;
 import io.github.createtechified.evolutionae.datagen.EvoAEDatagen;
 import net.minecraft.resources.ResourceLocation;
@@ -31,6 +32,7 @@ public class EvoAEMod {
 
         EvoAETab.init();
         EvoAEReference.REGISTRATE.defaultCreativeTab(EvoAETab.MAIN.getKey());
+        EvoAEMultiblocks.init();
         EvoAEItems.init();
         EvoAEBlocks.init();
         EvoAEBlockEntities.init();

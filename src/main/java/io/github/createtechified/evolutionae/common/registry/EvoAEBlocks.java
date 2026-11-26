@@ -8,7 +8,7 @@ import com.tterrag.registrate.providers.RegistrateBlockstateProvider;
 import com.tterrag.registrate.util.entry.BlockEntry;
 import io.github.createtechified.evolutionae.EvoAEMod;
 import io.github.createtechified.evolutionae.EvoAEReference;
-import io.github.createtechified.evolutionae.common.data.patternproviders.block.EvoAE18sPatternProvider;
+import io.github.createtechified.evolutionae.common.data.crafting.patternproviders.block.EvoAE18sPatternProvider;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.properties.EnumProperty;

@@ -5,7 +5,7 @@ import appeng.menu.AEBaseMenu;
 import appeng.menu.implementations.MenuTypeBuilder;
 import io.github.createtechified.evolutionae.EvoAEReference;
 import io.github.createtechified.evolutionae.EvoAEMod;
-import io.github.createtechified.evolutionae.common.data.patternproviders.menu.EvoAE18sPatternProviderMenu;
+import io.github.createtechified.evolutionae.common.data.crafting.patternproviders.menu.EvoAE18sPatternProviderMenu;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.inventory.MenuType;

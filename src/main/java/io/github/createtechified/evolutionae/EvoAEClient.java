@@ -2,7 +2,7 @@ package io.github.createtechified.evolutionae;
 
 import appeng.client.gui.implementations.PatternProviderScreen;
 import appeng.init.client.InitScreens;
-import io.github.createtechified.evolutionae.common.data.patternproviders.menu.EvoAE18sPatternProviderMenu;
+import io.github.createtechified.evolutionae.common.data.crafting.patternproviders.menu.EvoAE18sPatternProviderMenu;
 import io.github.createtechified.evolutionae.common.registry.EvoAEMenus;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
