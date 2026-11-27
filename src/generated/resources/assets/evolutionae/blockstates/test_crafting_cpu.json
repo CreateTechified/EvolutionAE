@@ -1,0 +1,100 @@
+{
+  "variants": {
+    "facing=east,upwards_facing=down": {
+      "gtceu:z": 180,
+      "model": "evolutionae:block/machine/test_crafting_cpu",
+      "y": 90
+    },
+    "facing=east,upwards_facing=east": {
+      "model": "evolutionae:block/machine/test_crafting_cpu"
+    },
+    "facing=east,upwards_facing=north": {
+      "gtceu:z": 270,
+      "model": "evolutionae:block/machine/test_crafting_cpu",
+      "y": 90
+    },
+    "facing=east,upwards_facing=south": {
+      "gtceu:z": 90,
+      "model": "evolutionae:block/machine/test_crafting_cpu",
+      "y": 90
+    },
+    "facing=east,upwards_facing=up": {
+      "model": "evolutionae:block/machine/test_crafting_cpu",
+      "y": 90
+    },
+    "facing=east,upwards_facing=west": {
+      "model": "evolutionae:block/machine/test_crafting_cpu"
+    },
+    "facing=north,upwards_facing=down": {
+      "gtceu:z": 180,
+      "model": "evolutionae:block/machine/test_crafting_cpu"
+    },
+    "facing=north,upwards_facing=east": {
+      "gtceu:z": 90,
+      "model": "evolutionae:block/machine/test_crafting_cpu"
+    },
+    "facing=north,upwards_facing=north": {
+      "model": "evolutionae:block/machine/test_crafting_cpu"
+    },
+    "facing=north,upwards_facing=south": {
+      "model": "evolutionae:block/machine/test_crafting_cpu"
+    },
+    "facing=north,upwards_facing=up": {
+      "model": "evolutionae:block/machine/test_crafting_cpu"
+    },
+    "facing=north,upwards_facing=west": {
+      "gtceu:z": 270,
+      "model": "evolutionae:block/machine/test_crafting_cpu"
+    },
+    "facing=south,upwards_facing=down": {
+      "gtceu:z": 180,
+      "model": "evolutionae:block/machine/test_crafting_cpu",
+      "y": 180
+    },
+    "facing=south,upwards_facing=east": {
+      "gtceu:z": 270,
+      "model": "evolutionae:block/machine/test_crafting_cpu",
+      "y": 180
+    },
+    "facing=south,upwards_facing=north": {
+      "model": "evolutionae:block/machine/test_crafting_cpu"
+    },
+    "facing=south,upwards_facing=south": {
+      "model": "evolutionae:block/machine/test_crafting_cpu"
+    },
+    "facing=south,upwards_facing=up": {
+      "model": "evolutionae:block/machine/test_crafting_cpu",
+      "y": 180
+    },
+    "facing=south,upwards_facing=west": {
+      "gtceu:z": 90,
+      "model": "evolutionae:block/machine/test_crafting_cpu",
+      "y": 180
+    },
+    "facing=west,upwards_facing=down": {
+      "gtceu:z": 180,
+      "model": "evolutionae:block/machine/test_crafting_cpu",
+      "y": 270
+    },
+    "facing=west,upwards_facing=east": {
+      "model": "evolutionae:block/machine/test_crafting_cpu"
+    },
+    "facing=west,upwards_facing=north": {
+      "gtceu:z": 90,
+      "model": "evolutionae:block/machine/test_crafting_cpu",
+      "y": 270
+    },
+    "facing=west,upwards_facing=south": {
+      "gtceu:z": 270,
+      "model": "evolutionae:block/machine/test_crafting_cpu",
+      "y": 270
+    },
+    "facing=west,upwards_facing=up": {
+      "model": "evolutionae:block/machine/test_crafting_cpu",
+      "y": 270
+    },
+    "facing=west,upwards_facing=west": {
+      "model": "evolutionae:block/machine/test_crafting_cpu"
+    }
+  }
+}

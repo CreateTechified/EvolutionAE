@@ -1,0 +1,58 @@
+{
+  "parent": "minecraft:block/block",
+  "loader": "gtceu:machine",
+  "machine": "evolutionae:test_crafting_cpu",
+  "texture_overrides": {
+    "bottom": "gtceu:block/casings/hpca/computer_casing/bottom",
+    "side": "gtceu:block/casings/hpca/computer_casing/side",
+    "top": "gtceu:block/casings/hpca/computer_casing/top"
+  },
+  "variants": {
+    "recipe_logic_status=idle": {
+      "model": {
+        "parent": "gtceu:block/machine/template/sided/sided",
+        "textures": {
+          "bottom": "gtceu:block/casings/hpca/computer_casing/bottom",
+          "overlay_front": "gtceu:block/machines/object_holder/overlay_front",
+          "side": "gtceu:block/casings/hpca/computer_casing/side",
+          "top": "gtceu:block/casings/hpca/computer_casing/top"
+        }
+      }
+    },
+    "recipe_logic_status=suspend": {
+      "model": {
+        "parent": "gtceu:block/machine/template/sided/sided",
+        "textures": {
+          "bottom": "gtceu:block/casings/hpca/computer_casing/bottom",
+          "overlay_front": "gtceu:block/machines/object_holder/overlay_front",
+          "side": "gtceu:block/casings/hpca/computer_casing/side",
+          "top": "gtceu:block/casings/hpca/computer_casing/top"
+        }
+      }
+    },
+    "recipe_logic_status=waiting": {
+      "model": {
+        "parent": "gtceu:block/machine/template/sided/sided",
+        "textures": {
+          "bottom": "gtceu:block/casings/hpca/computer_casing/bottom",
+          "overlay_front": "gtceu:block/machines/object_holder/overlay_front_active",
+          "overlay_front_emissive": "gtceu:block/machines/object_holder/overlay_front_active_emissive",
+          "side": "gtceu:block/casings/hpca/computer_casing/side",
+          "top": "gtceu:block/casings/hpca/computer_casing/top"
+        }
+      }
+    },
+    "recipe_logic_status=working": {
+      "model": {
+        "parent": "gtceu:block/machine/template/sided/sided",
+        "textures": {
+          "bottom": "gtceu:block/casings/hpca/computer_casing/bottom",
+          "overlay_front": "gtceu:block/machines/object_holder/overlay_front_active",
+          "overlay_front_emissive": "gtceu:block/machines/object_holder/overlay_front_active_emissive",
+          "side": "gtceu:block/casings/hpca/computer_casing/side",
+          "top": "gtceu:block/casings/hpca/computer_casing/top"
+        }
+      }
+    }
+  }
+}

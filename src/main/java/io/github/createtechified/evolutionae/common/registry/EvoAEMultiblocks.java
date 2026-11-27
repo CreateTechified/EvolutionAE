@@ -30,7 +30,7 @@ public class EvoAEMultiblocks {
                     .where('Y', Predicates.abilities(PartAbility.INPUT_ENERGY))
                     .where('X', Predicates.abilities(PartAbility.MAINTENANCE))
                     .build())
-            //.sidedWorkableCasingModel(GTCEu.id("block/casings/hpca/computer_casing"), GTCEu.id("block/machines/object_holder"))
+            .sidedWorkableCasingModel(GTCEu.id("block/casings/hpca/computer_casing"), GTCEu.id("block/machines/object_holder"))
             .langValue("Crafting CPU")
             .register();
 }
