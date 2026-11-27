@@ -50,16 +50,22 @@ repositories {
             includeGroup 'dev.toma.configuration'
         }
     }
-    maven {
-        name = 'AE2 Project Evo Fork (GitHub Packages)'
-        url = 'https://maven.pkg.github.com/CreateTechified/Applied-Energistics-2-Project-Evo-Fork'
-        credentials {
-            username = providers.environmentVariable('GITHUB_ACTOR').orElse(providers.gradleProperty('gpr.user')).orNull
-            password = providers.environmentVariable('GITHUB_TOKEN').orElse(providers.gradleProperty('gpr.token')).orNull
+    def gprUser = providers.environmentVariable('GITHUB_ACTOR').orElse(providers.gradleProperty('gpr.user')).orNull
+    def gprToken = providers.environmentVariable('GITHUB_TOKEN').orElse(providers.gradleProperty('gpr.token')).orNull
+    if (gprUser && gprToken) {
+        maven {
+            name = 'AE2 Project Evo Fork (GitHub Packages)'
+            url = 'https://maven.pkg.github.com/CreateTechified/Applied-Energistics-2-Project-Evo-Fork'
+            credentials {
+                username = gprUser
+                password = gprToken
+            }
+            content {
+                includeModule 'org.appliedenergistics', 'appliedenergistics2'
+            }
         }
-        content {
-            includeModule 'org.appliedenergistics', 'appliedenergistics2'
-        }
+    } else {
+        logger.warn('No GitHub Packages credentials (gpr.user / gpr.token); AE2 fork must be available in mavenLocal().')
     }
     maven {
         name = 'ModMaven'
