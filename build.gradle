@@ -51,6 +51,17 @@ repositories {
         }
     }
     maven {
+        name = 'AE2 Project Evo Fork (GitHub Packages)'
+        url = 'https://maven.pkg.github.com/CreateTechified/Applied-Energistics-2-Project-Evo-Fork'
+        credentials {
+            username = providers.environmentVariable('GITHUB_ACTOR').orElse(providers.gradleProperty('gpr.user')).orNull
+            password = providers.environmentVariable('GITHUB_TOKEN').orElse(providers.gradleProperty('gpr.token')).orNull
+        }
+        content {
+            includeModule 'org.appliedenergistics', 'appliedenergistics2'
+        }
+    }
+    maven {
         name = 'ModMaven'
         url = 'https://modmaven.dev/'
         content {

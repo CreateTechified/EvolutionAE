@@ -4,13 +4,12 @@ on:
     branches: ["1.21.1"]
   pull_request:
     branches: ["1.21.1"]
-env:
-  AE2_FORK_REF: "1.21.1"
 jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      packages: read
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -21,22 +20,6 @@ jobs:
           distribution: 'temurin'
       - name: Make Gradle Wrapper Executable
         run: chmod +x ./gradlew
-      - name: Checkout AE2 Project Evo Fork
-        uses: actions/checkout@v4
-        with:
-          repository: CreateTechified/Applied-Energistics-2-Project-Evo-Fork
-          ref: ${{ env.AE2_FORK_REF }}
-          path: ae2-fork
-      - name: Publish AE2 Fork to Maven Local
-        working-directory: ae2-fork
-        run: |
-          AE2_VERSION=$(grep '^ae2_version=' ../gradle.properties | cut -d'=' -f2 | tr -d '[:space:]')
-          echo "Publishing org.appliedenergistics:appliedenergistics2:${AE2_VERSION} to mavenLocal"
-          chmod +x ./gradlew
-          ./gradlew publishToMavenLocal \
-            -Pgroup=org.appliedenergistics \
-            -Pversion="${AE2_VERSION}" \
-            --no-daemon
       - uses: burrunan/gradle-cache-action@v3
         name: Build EvolutionAE
         with:
@@ -44,7 +27,9 @@ jobs:
           arguments: build
           gradle-version: wrapper
           concurrent: true
-          save-maven-dependencies-cache: false
+        env:
+          GITHUB_ACTOR: ${{ github.actor }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Process Version and Rename Jar
         id: mod_version
         run: |
